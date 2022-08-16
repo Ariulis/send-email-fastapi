@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% import '_macros.html' as macros %}
+
+{% block title %}
+  {{ super() }} | Index page
+{% endblock title %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-6">
+      <h1 class="mt-2 mb-4">Sending email</h1>
+      {{ macros.forms(form) }}
+    </div>
+  </div>
+{% endblock content %}
